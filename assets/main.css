@@ -1,0 +1,62 @@
+@import url(./includes/avatar.css);
+@import url(./includes/header.css);
+@import url(./includes/footer.css);
+@import url(./utils/base.css);
+@import url(./utils/color.css);
+@import url(./utils/fonts.css);
+
+body {
+    background-color: var(--yellow);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Figtree', sans-serif;
+    flex-direction: column;
+    gap: 20px;
+    padding: 24px;
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 16px;
+    }
+
+    .card {
+        width: min(100%, 340px);
+        padding: 16px 16px 18px;
+        border-radius: 18px;
+        box-shadow: 7px 7px 0 0 #111111;
+    }
+
+    .card-image {
+        height: 180px;
+    }
+
+    .card-content {
+        gap: 10px;
+    }
+
+    .card-content h2 {
+        font-size: clamp(1.7rem, 5vw, 2.1rem);
+    }
+
+    .card-content p {
+        font-size: 0.96rem;
+    }
+
+    .author {
+        margin-top: 2px;
+    }
+}
+
+@media (min-width: 768px) {
+    body {
+        padding: 32px;
+    }
+
+    .card {
+        width: min(100%, 400px);
+    }
+}
